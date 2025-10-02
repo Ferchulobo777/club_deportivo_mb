@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -27,6 +28,15 @@
         android:layout_gravity="start" />
 
     <!-- Nombre completo -->
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre Completo"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="start" />
     <EditText
         android:id="@+id/etNombre"
         android:layout_width="match_parent"
@@ -39,6 +49,14 @@
         android:layout_marginBottom="12dp" />
 
     <!-- Nombre de usuario -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre de usuario"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="start" />
     <EditText
         android:id="@+id/etUsuario"
         android:layout_width="match_parent"
@@ -51,6 +69,14 @@
         android:layout_marginBottom="12dp" />
 
     <!-- Contraseña -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contraseña"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="start" />
     <EditText
         android:id="@+id/etPassword"
         android:layout_width="match_parent"
@@ -63,10 +89,19 @@
         android:layout_marginBottom="12dp" />
 
     <!-- Área (Spinner) -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Área"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="start" />
     <Spinner
         android:id="@+id/spinnerArea"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:minHeight="48dp"
         android:background="@drawable/spinner"
         android:layout_marginBottom="24dp"
         android:padding="8dp" />
@@ -74,10 +109,13 @@
     <!-- Botón Crear Cuenta -->
 
     <!-- Texto Iniciar sesión -->
+
     <Button
         android:id="@+id/btnCrearCuenta"
-        android:layout_width="match_parent"
+        android:layout_width="211dp"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/botonprincipal"
         android:gravity="center"
