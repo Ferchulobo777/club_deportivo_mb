@@ -18,7 +18,7 @@
             android:name=".personal_menu"
             android:exported="false" />
         <activity
-            android:name=".registrousuario"
+            android:name=".Registrousuario"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
