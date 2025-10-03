@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -47,73 +48,81 @@
 
         <!-- nuevo personal -->
         <Button
+            app:backgroundTint="@null"
+            android:id="@+id/boton_nuevop"
             android:layout_width="211dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="35dp"
             android:layout_marginBottom="16dp"
-            android:background="@drawable/boton_azul"
-            android:backgroundTint="@null"
+            android:background="@drawable/botonmenu"
             android:gravity="center"
             android:padding="12dp"
             android:text="Añadir nuevo personal"
             android:textColor="#FFFFFF"
-            android:textSize="16sp" />
+            android:textSize="16sp"/>
 
-        <!-- nuevo personal -->
+        <!-- modificar personal -->
         <Button
+            app:backgroundTint="@null"
+            android:id="@+id/boton_modificarp"
             android:layout_width="211dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="16dp"
-            android:background="@drawable/boton_azul"
+            android:background="@drawable/botonmenu"
             android:gravity="center"
             android:padding="12dp"
-            android:text="Añadir nuevo personal"
+            android:text="Modificar personal"
             android:textColor="#FFFFFF"
             android:textSize="16sp" />
 
-        <!-- nuevo personal -->
+        <!-- buscar personal -->
         <Button
+            app:backgroundTint="@null"
+            android:id="@+id/boton_buscarp"
             android:layout_width="211dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="16dp"
-            android:background="@drawable/boton_azul"
+            android:background="@drawable/botonmenu"
             android:gravity="center"
             android:padding="12dp"
-            android:text="Añadir nuevo personal"
+            android:text="Buscar personal"
             android:textColor="#FFFFFF"
             android:textSize="16sp" />
 
-        <!-- nuevo personal -->
+        <!-- asistencias -->
         <Button
+            app:backgroundTint="@null"
+            android:id="@+id/boton_asistencias"
             android:layout_width="211dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="16dp"
-            android:background="@drawable/boton_azul"
+            android:background="@drawable/botonmenu"
             android:gravity="center"
             android:padding="12dp"
-            android:text="Añadir nuevo personal"
+            android:text="Asistencias"
             android:textColor="#FFFFFF"
             android:textSize="16sp" />
 
-        <!-- nuevo personal -->
+        <!-- sueldos -->
         <Button
-            android:id="@+id/boton_azul"
+            app:backgroundTint="@null"
+            android:id="@+id/boton_sueldos"
             android:layout_width="211dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="16dp"
-            android:background="@drawable/boton_azul"
+            android:background="@drawable/botonmenu"
             android:gravity="center"
             android:padding="12dp"
-            android:text="Añadir nuevo personal"
+            android:text="Sueldos"
             android:textColor="#FFFFFF"
             android:textSize="16sp" />
 
