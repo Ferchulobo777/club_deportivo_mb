@@ -107,12 +107,9 @@
         android:padding="8dp" />
 
     <!-- Botón Crear Cuenta -->
-
-    <!-- Texto Iniciar sesión -->
-
     <Button
-        android:layout_marginTop="60dp"
-        android:id="@+id/btnCrearCuenta"
+
+        android:id="@+id/botonprincipal"
         android:layout_width="211dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
