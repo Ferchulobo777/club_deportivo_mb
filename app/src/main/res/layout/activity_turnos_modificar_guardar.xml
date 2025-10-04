@@ -8,7 +8,7 @@
     android:orientation="vertical"
     android:padding="16dp"
     android:background="#1D1B41"
-    tools:context=".AsignarActividadAProfesorActivity">
+    tools:context=".TurnosModificarGuardarActivity">
 
     <LinearLayout
         android:id="@+id/header"
@@ -48,14 +48,13 @@
             android:contentDescription="Volver"
             android:src="@drawable/flecha_volver" />
 
-
     </LinearLayout>
 
     <TextView
         android:id="@+id/tvPregunta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Asignar a Actividad"
+        android:text="Reprogramar o eliminar turno"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         android:layout_gravity="center"
@@ -73,71 +72,93 @@
         android:elevation="4dp"
         android:clipToOutline="true"
         android:layout_gravity="center"
-        android:layout_marginBottom="24dp">
+        android:layout_marginBottom="24dp"
+        android:gravity="center">
 
-        <CheckBox
-            android:id="@+id/checkBox1"
+        <EditText
+            android:id="@+id/etNombreApellido"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Morena Rial"
+            android:hint="Nombre y Apellido"
+            android:inputType="textPersonName"
+            android:background="@drawable/edittext"
             android:padding="12dp"
-            android:layout_marginBottom="12dp"
-            android:textSize="16sp"
-            android:textColor="#FFFFFF"
-            app:buttonTint="@drawable/checkbox"/>
-        <CheckBox
-            android:id="@+id/checkBox2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="El comandante"
-            android:padding="12dp"
-            android:layout_marginBottom="12dp"
-            android:textSize="16sp"
-            android:textColor="#FFFFFF"
-            app:buttonTint="@drawable/checkbox"/>
-        <CheckBox
-            android:id="@+id/checkBox3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Tini"
-            android:padding="12dp"
-            android:layout_marginBottom="12dp"
-            android:textSize="16sp"
-            android:textColor="#FFFFFF"
-            app:buttonTint="@drawable/checkbox"/>
-        <CheckBox
-            android:id="@+id/checkBox4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Fede Bal"
-            android:padding="12dp"
-            android:layout_marginBottom="12dp"
-            android:textSize="16sp"
-            android:textColor="#FFFFFF"
-            app:buttonTint="@drawable/checkbox"/>
-        <CheckBox
-            android:id="@+id/checkBox5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Wanda Nara"
-            android:padding="12dp"
-            android:layout_marginBottom="12dp"
-            android:textSize="16sp"
-            android:textColor="#FFFFFF"
-            app:buttonTint="@drawable/checkbox"/>
+            android:layout_marginBottom="12dp" />
 
-        <Button
-            android:id="@+id/btnAsignarActividad"
-            app:backgroundTint="@null"
-            android:layout_width="211dp"
+        <EditText
+            android:id="@+id/etDNI"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:background="@drawable/botonmenu"
+            android:hint="DNI"
+            android:inputType="textPersonName"
+            android:background="@drawable/edittext"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp" />
+
+        <Spinner
+            android:id="@+id/spnSeleccionarProfesional"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            android:background="@drawable/spinner"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"/>
+
+        <EditText
+            android:id="@+id/etDiaTurno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Dia"
+            android:inputType="textPersonName"
+            android:background="@drawable/edittext"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/etHoraTurno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Hora"
+            android:inputType="textPersonName"
+            android:background="@drawable/edittext"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
             android:gravity="center"
-            android:padding="12dp"
-            android:textColor="#FFFFFF"
-            android:textSize="16sp"
-            android:text="Guardar" />
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="0dp">
+
+            <Button
+                android:id="@+id/btnEliminarTurno"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/botonmenu"
+                app:backgroundTint="@color/botonamarillo"
+                android:text="Eliminar"
+                android:textColor="#FFFFFF"
+                android:padding="12dp"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btnGuardarTurno"
+                app:backgroundTint="@null"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/botonmenu"
+                android:text="Guardar"
+                android:textColor="#FFFFFF"
+                android:padding="12dp"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
     </LinearLayout>
 
     <TextView
@@ -149,4 +170,5 @@
         android:textSize="14sp"
         android:layout_gravity="center"
         android:layout_marginBottom="16dp"/>
+
 </LinearLayout>

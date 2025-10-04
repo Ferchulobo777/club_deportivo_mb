@@ -12,6 +12,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ClubDeportivoMB">
         <activity
+            android:name=".TurnosConsultarHistoriaClinicaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TurnosCargarConsultaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TurnosBuscarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TurnosModificarGuardarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TurnosModificarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TurnosAgregaractivity"
+            android:exported="false" />
+        <activity
             android:name=".NuevoClienteActivity"
             android:exported="false" />
         <activity

@@ -11,40 +11,22 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class AsignarActividadActivity : AppCompatActivity() {
+class TurnosModificarGuardarActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_asignar_actividad)
+        setContentView(R.layout.activity_turnos_modificar_guardar)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
 
-        val actividades = mutableListOf("Seleccionar Actividad", "Futbol", "Voley", "Cross-fit","Padel", "Zumba")
-
-        val adapterActividades = ArrayAdapter(
-            this,
-            android.R.layout.simple_spinner_item,
-            actividades
-        )
-
-        adapterActividades.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-
-        val spnActividades = findViewById<Spinner>(R.id.spnAsignarActividad)
-        spnActividades.adapter = adapterActividades
-
-        val btnAsignarActividad = findViewById<Button>(R.id.btnAsignarActividad)
-        btnAsignarActividad.setOnClickListener {
-            val intent = Intent(this, AsignarActividadAProfesorActivity::class.java)
-            startActivity(intent)
-        }
-
         val btnVolver = findViewById<ImageButton>(R.id.btnVolver)
         btnVolver.setOnClickListener {
-            val intent = Intent(this, ActividadesMenuActivity::class.java)
+            val intent = Intent(this, TurnosMenuActivity::class.java)
             startActivity(intent)
         }
+
     }
 }

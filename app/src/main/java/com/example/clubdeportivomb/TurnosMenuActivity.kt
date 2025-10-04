@@ -1,6 +1,9 @@
 package com.example.clubdeportivomb
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
+import android.widget.ImageButton
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -10,11 +13,32 @@ class TurnosMenuActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_menu_turnos)
+        setContentView(R.layout.activity_turnos_menu)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+        }
+
+        val btnTurnosAgregaractivity = findViewById<Button>(R.id.btnAgendarNuevoTurnoMenu)
+        btnTurnosAgregaractivity.setOnClickListener {
+            val intent = Intent(this, AgregarActividadActivity::class.java)
+            startActivity(intent)
+        }
+        val btnTurnosmodificaractivity = findViewById<Button>(R.id.btnModificarTurnoMenu)
+        btnTurnosmodificaractivity.setOnClickListener {
+            val intent = Intent(this, TurnosMenuActivity::class.java)
+            startActivity(intent)
+        }
+        val btnTurnosBuscarActivity = findViewById<Button>(R.id.btnBuscarTurnosMenu)
+        btnTurnosBuscarActivity.setOnClickListener {
+            val intent = Intent(this, TurnosBuscarActivity::class.java)
+            startActivity(intent)
+        }
+        val btnVolver = findViewById<ImageButton>(R.id.btnVolver)
+        btnVolver.setOnClickListener {
+            val intent = Intent(this, homeActivity::class.java)
+            startActivity(intent)
         }
     }
 }
