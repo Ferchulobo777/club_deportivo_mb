@@ -15,10 +15,25 @@
             android:name=".NuevoClienteActivity"
             android:exported="false" />
         <activity
-            android:name=".ClienteNuevo"
+            android:name=".homeActivity"
             android:exported="false" />
         <activity
-            android:name=".homeActivity"
+            android:name=".AsignarActividadActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BuscarActividadActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AsignarActividadAProfesorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".InformacionActividadActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AgregarActividadActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ActividadesMenuActivity"
             android:exported="false" />
         <activity
             android:name=".pantalla_base"

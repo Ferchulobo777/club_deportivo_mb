@@ -1,32 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp"
-    android:background="#1D1B41">
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:padding="16dp"
+android:background="#1D1B41">
 
-
-    <!-- usuario -->
-    <TextView
-        android:id="@+id/tvUsuario"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/usuario"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
         android:layout_gravity="center"
-        android:layout_marginTop="16dp"/>
+        android:clipToOutline="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/fondo_redondo_avatar"
+            android:clipToOutline="true"
+            tools:srcCompat="@tools:sample/avatars"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:id="@+id/tvUsuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/usuario"
+            android:textColor="#FFFFFF"
+            android:layout_weight="1"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/btnVolver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:contentDescription="Volver"
+            android:src="@drawable/flecha_volver" />
 
 
-    <!-- pregunta inicial -->
+    </LinearLayout>
+
     <TextView
         android:id="@+id/tvPregunta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/qu_necesitas_hacer_en_personal"
+        android:text="¿Qué necesitas hacer en Actividades?"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         android:layout_gravity="center"
@@ -44,12 +72,26 @@
         android:elevation="4dp"
         android:clipToOutline="true"
         android:layout_gravity="center"
-        android:layout_marginBottom="24dp">
+        android:layout_marginBottom="24dp"
+        android:gravity="center_vertical">
 
-        <!-- nuevo personal -->
         <Button
+            android:id="@+id/btnAgregarActividadMenu"
             app:backgroundTint="@null"
-            android:id="@+id/boton_nuevop"
+            android:layout_width="211dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/botonmenu"
+            android:gravity="center"
+            android:padding="12dp"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:text="Agregar Actividad" />
+
+        <Button
+            android:id="@+id/btnBuscarActividadMenu"
+            app:backgroundTint="@null"
             android:layout_width="211dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
@@ -58,78 +100,27 @@
             android:background="@drawable/botonmenu"
             android:gravity="center"
             android:padding="12dp"
-            android:text="Añadir nuevo personal"
             android:textColor="#FFFFFF"
-            android:textSize="16sp"/>
+            android:textSize="16sp"
+            android:text="Buscar Actividad" />
 
-        <!-- modificar personal -->
         <Button
+            android:id="@+id/btnAsignarActividadMenu"
             app:backgroundTint="@null"
-            android:id="@+id/boton_modificarp"
             android:layout_width="211dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="35dp"
             android:layout_marginBottom="16dp"
             android:background="@drawable/botonmenu"
             android:gravity="center"
             android:padding="12dp"
-            android:text="Modificar personal"
             android:textColor="#FFFFFF"
-            android:textSize="16sp" />
-
-        <!-- buscar personal -->
-        <Button
-            app:backgroundTint="@null"
-            android:id="@+id/boton_buscarp"
-            android:layout_width="211dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="16dp"
-            android:background="@drawable/botonmenu"
-            android:gravity="center"
-            android:padding="12dp"
-            android:text="Buscar personal"
-            android:textColor="#FFFFFF"
-            android:textSize="16sp" />
-
-        <!-- asistencias -->
-        <Button
-            app:backgroundTint="@null"
-            android:id="@+id/boton_asistencias"
-            android:layout_width="211dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="16dp"
-            android:background="@drawable/botonmenu"
-            android:gravity="center"
-            android:padding="12dp"
-            android:text="Asistencias"
-            android:textColor="#FFFFFF"
-            android:textSize="16sp" />
-
-        <!-- sueldos -->
-        <Button
-            app:backgroundTint="@null"
-            android:id="@+id/boton_sueldos"
-            android:layout_width="211dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="16dp"
-            android:background="@drawable/botonmenu"
-            android:gravity="center"
-            android:padding="12dp"
-            android:text="Sueldos"
-            android:textColor="#FFFFFF"
-            android:textSize="16sp" />
-
+            android:textSize="16sp"
+            android:text="Asignar Actividad" />
 
     </LinearLayout>
 
-    <!-- necesitas ayuda? -->
     <TextView
         android:id="@+id/tvAyuda"
         android:layout_width="wrap_content"
