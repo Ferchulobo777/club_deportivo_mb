@@ -11,6 +11,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ClubDeportivoMB">
+
+        <activity
+            android:name=".ClienteMenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TurnosMenuActivity"
+            android:exported="false" />
         <activity
             android:name=".TurnosConsultarHistoriaClinicaActivity"
             android:exported="false" />
@@ -33,7 +40,22 @@
             android:name=".NuevoClienteActivity"
             android:exported="false" />
         <activity
-            android:name=".homeActivity"
+            android:name=".ClienteNuevoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ClienteBuscarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ClienteVerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ClienteEditarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ClienteNuevoSocioActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ClienteNuevoNoSocioActivity"
             android:exported="false" />
         <activity
             android:name=".AsignarActividadActivity"
@@ -52,7 +74,7 @@
             android:exported="false" />
         <activity
             android:name=".ActividadesMenuActivity"
-            android:exported="false" />
+            android:exported="false"></activity>
         <activity
             android:name=".pantalla_base"
             android:exported="false" />
@@ -62,6 +84,15 @@
         <activity
             android:name=".Registrousuario"
             android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" >
+
+        </activity>
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
