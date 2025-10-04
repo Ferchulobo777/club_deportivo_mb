@@ -12,7 +12,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ClubDeportivoMB">
         <activity
-            android:name=".homeActivity"
+            android:name=".AsignarActividadActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BuscarActividadActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AgregarActividadActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ActividadesMenuActivity"
             android:exported="false" />
         <activity
             android:name=".pantalla_base"
