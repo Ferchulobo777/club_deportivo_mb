@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.ArrayAdapter
 import android.widget.Button
+import android.widget.ImageButton
 import android.widget.Spinner
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -21,21 +22,11 @@ class TurnosModificarGuardarActivity : AppCompatActivity() {
             insets
         }
 
-        val profesionales = mutableListOf("Seleccionar Profesional", "Lic. Messi", "Lic. Perez", "Profesional 3")
-        val adapterProfesionales = ArrayAdapter(
-            this,
-            android.R.layout.simple_spinner_item,
-            profesionales
-        )
-
-        adapterProfesionales.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-        val spnProfesional = findViewById<Spinner>(R.id.spnSeleccionarProfesional)
-        spnProfesional.adapter = adapterProfesionales
-
-        val btnGuardarTurno = findViewById<Button>(R.id.btnGuardarTurno)
-        btnGuardarTurno.setOnClickListener {
-            val intent = Intent(this, AgregarActividadActivity::class.java)
+        val btnVolver = findViewById<ImageButton>(R.id.btnVolver)
+        btnVolver.setOnClickListener {
+            val intent = Intent(this, TurnosMenuActivity::class.java)
             startActivity(intent)
         }
+
     }
 }
