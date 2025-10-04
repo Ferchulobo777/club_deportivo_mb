@@ -44,7 +44,7 @@
         android:layout_marginBottom="24dp">
 
         <Button
-            android:id="@+id/btnAgendarNuevoTurno"
+            android:id="@+id/btnAgendarNuevoTurnoMenu"
             app:backgroundTint="@null"
             android:layout_width="211dp"
             android:layout_height="wrap_content"
@@ -59,7 +59,7 @@
             android:textSize="16sp"/>
 
         <Button
-            android:id="@+id/btnModificarTurno"
+            android:id="@+id/btnModificarTurnoMenu"
             app:backgroundTint="@null"
             android:layout_width="211dp"
             android:layout_height="wrap_content"
@@ -73,7 +73,7 @@
             android:textSize="16sp"/>
 
         <Button
-            android:id="@+id/btnBuscarTurnos"
+            android:id="@+id/btnBuscarTurnosMenu"
             app:backgroundTint="@null"
             android:layout_width="211dp"
             android:layout_height="wrap_content"
@@ -87,7 +87,7 @@
             android:textSize="16sp"/>
 
         <Button
-            android:id="@+id/btnCargarConsulta"
+            android:id="@+id/btnCargarConsultaMenu"
             app:backgroundTint="@null"
             android:layout_width="211dp"
             android:layout_height="wrap_content"
@@ -101,7 +101,7 @@
             android:textSize="16sp"/>
 
         <Button
-            android:id="@+id/btnHistorialDeConsultas"
+            android:id="@+id/btnHistorialDeConsultasMenu"
             app:backgroundTint="@null"
             android:layout_width="211dp"
             android:layout_height="wrap_content"
