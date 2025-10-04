@@ -7,24 +7,47 @@
     android:padding="16dp"
     android:background="#1D1B41">
 
-    <!-- Título -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="REGISTRO"
-        android:textColor="#FFFFFF"
-        android:textSize="26sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="8dp"
-        android:layout_gravity="start" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="16dp">
 
+
+        <!-- Título -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="REGISTRO"
+            android:textColor="#FFFFFF"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="200dp"
+            android:layout_gravity="start" />
+
+
+        <!-- Flecha -->
+        <ImageButton
+            android:id="@+id/btnVolver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:contentDescription="Volver"
+            android:src="@drawable/flecha_volver" />
+
+    </LinearLayout>
+
+
+    <!-- completar datos -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Completar los siguientes datos"
         android:textColor="#FFFFFF"
         android:textSize="14sp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="18dp"
         android:layout_gravity="start" />
 
     <!-- Nombre completo -->
@@ -97,18 +120,20 @@
         android:textSize="14sp"
         android:layout_marginBottom="16dp"
         android:layout_gravity="start" />
+
+
     <Spinner
-        android:id="@+id/spinnerArea"
+        android:id="@+id/spinner_area"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:minHeight="48dp"
-        android:background="@drawable/spinner"
         android:layout_marginBottom="24dp"
+        android:background="@drawable/spinner"
+        android:minHeight="48dp"
         android:padding="8dp" />
+
 
     <!-- Botón Crear Cuenta -->
     <Button
-
         android:id="@+id/botonprincipal"
         android:layout_width="211dp"
         android:layout_height="wrap_content"

@@ -10,7 +10,6 @@ import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Toast
-import com.example.clubdeportivomb.R
 
 
 class Registrousuario : AppCompatActivity() {
@@ -23,10 +22,10 @@ class Registrousuario : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        val spinnerArea: Spinner = findViewById(R.id.spinnerArea)
+        val spinnerArea: Spinner = findViewById(R.id.spinner_area)
 
         val adapter = ArrayAdapter.createFromResource(
-            this,
+             this,
             R.array.areas_array,
             android.R.layout.simple_spinner_item
         )

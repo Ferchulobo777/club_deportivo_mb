@@ -6,6 +6,8 @@
     android:orientation="vertical"
     android:background="#1D1B41">
 
+
+
     <!-- Imagen portada -->
     <ImageView
         android:id="@+id/title_imageView"
