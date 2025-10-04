@@ -10,6 +10,7 @@ import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Toast
+import android.widget.ImageButton
 
 
 class Registrousuario : AppCompatActivity() {
@@ -22,6 +23,12 @@ class Registrousuario : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        val btnVolver = findViewById<ImageButton>(R.id.btnVolver)
+        btnVolver.setOnClickListener {
+            onBackPressedDispatcher.onBackPressed()
+        }
+
         val spinnerArea: Spinner = findViewById(R.id.spinner_area)
 
         val adapter = ArrayAdapter.createFromResource(
