@@ -22,18 +22,18 @@ class AsignarActividadActivity : AppCompatActivity() {
             insets
         }
 
-        val profesores = mutableListOf("Seleccionar Profesor a asignar", "Wanda Nara", "Fede Bal", "Morena Rial")
+        val actividades = mutableListOf("Seleccionar Actividad", "Futbol", "Voley", "Cross-fit","Padel", "Zumba")
 
-        val adapterProfesores = ArrayAdapter(
+        val adapterActividades = ArrayAdapter(
             this,
             android.R.layout.simple_spinner_item,
-            profesores
+            actividades
         )
 
-        adapterProfesores.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        adapterActividades.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
 
-        val spnProfesores = findViewById<Spinner>(R.id.spnAsignarActividad)
-        spnProfesores.adapter = adapterProfesores
+        val spnActividades = findViewById<Spinner>(R.id.spnAsignarActividad)
+        spnActividades.adapter = adapterActividades
 
         val btnAsignarActividad = findViewById<Button>(R.id.btnAsignarActividad)
         btnAsignarActividad.setOnClickListener {

@@ -76,13 +76,55 @@
         android:layout_marginBottom="24dp">
 
         <CheckBox
-            android:id="@+id/checkBox"
+            android:id="@+id/checkBox1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="CheckBox"
+            android:text="Morena Rial"
             android:padding="12dp"
             android:layout_marginBottom="12dp"
-            android:textSize="16sp"/>
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            app:buttonTint="@drawable/checkbox"/>
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="El comandante"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            app:buttonTint="@drawable/checkbox"/>
+        <CheckBox
+            android:id="@+id/checkBox3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tini"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            app:buttonTint="@drawable/checkbox"/>
+        <CheckBox
+            android:id="@+id/checkBox4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fede Bal"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            app:buttonTint="@drawable/checkbox"/>
+        <CheckBox
+            android:id="@+id/checkBox5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wanda Nara"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            app:buttonTint="@drawable/checkbox"/>
 
         <Button
             android:id="@+id/btnAsignarActividad"
