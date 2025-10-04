@@ -11,7 +11,8 @@ import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Toast
 import android.widget.ImageButton
-
+import android.content.Intent
+import android.widget.TextView
 
 class Registrousuario : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -27,6 +28,13 @@ class Registrousuario : AppCompatActivity() {
         val btnVolver = findViewById<ImageButton>(R.id.btnVolver)
         btnVolver.setOnClickListener {
             onBackPressedDispatcher.onBackPressed()
+        }
+
+        val tvIniciaSesion = findViewById<TextView>(R.id.tvIniciaSesion)
+
+        tvIniciaSesion.setOnClickListener {
+            val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
         }
 
         val spinnerArea: Spinner = findViewById(R.id.spinner_area)
@@ -51,3 +59,4 @@ class Registrousuario : AppCompatActivity() {
 
     }
 }
+

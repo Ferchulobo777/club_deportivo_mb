@@ -70,7 +70,7 @@
                 android:text="Buscar"
                 android:textColor="#FFFFFF"
                 android:textSize="16sp"
-                app:backgroundTint="@null" />
+                app:backgroundTint="@android:color/transparent" />
 
         </LinearLayout>
 
@@ -82,13 +82,12 @@
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="16dp"
-            android:background="null"
             android:gravity="center"
             android:padding="12dp"
             android:text="Volver"
             android:textColor="#FFFFFF"
             android:textSize="16sp"
-            app:backgroundTint="@null" />
+            app:backgroundTint="@android:color/transparent" />
 
     </RelativeLayout>
 

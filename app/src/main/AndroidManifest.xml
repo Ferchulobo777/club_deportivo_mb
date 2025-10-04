@@ -11,6 +11,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ClubDeportivoMB">
+
+        <activity android:name=".PersonalNuevoActivity"
+            />
+        <activity android:name=".PersonalModificarActivity"
+            />
+        <activity android:name=".PersonalBuscarActivity"
+            />
         <activity
             android:name=".homeActivity"
             android:exported="false" />

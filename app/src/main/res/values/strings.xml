@@ -6,9 +6,4 @@
     <string name="qu_necesitas_hacer_en_cliente">¿Qué necesitas hacer en Clientes?</string>
     <string name="qu_tipo_cliente">¿Qué tipo de cliente deseas añadir?</string>
 
-    <string-array name="areas_array">
-        <item>Administración</item>
-        <item>Profesores</item>
-        <item>Recepción</item>
-    </string-array>
 </resources>

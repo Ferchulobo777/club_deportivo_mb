@@ -6,6 +6,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import android.widget.ImageButton
+import android.widget.Button
+import android.content.Intent
 
 class personal_menu : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,9 +19,33 @@ class personal_menu : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        // Flecha de volver
         val btnVolver = findViewById<ImageButton>(R.id.btnVolver)
         btnVolver.setOnClickListener {
-            onBackPressedDispatcher.onBackPressed()
+            val intent = Intent(this, homeActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+
+        //Añadir nuevo personal
+        val btnNuevo = findViewById<Button>(R.id.boton_nuevop)
+        btnNuevo.setOnClickListener {
+            val intent = Intent(this, PersonalNuevoActivity::class.java)
+            startActivity(intent)
+        }
+
+        //Modificar personal
+        val btnModificar = findViewById<Button>(R.id.boton_modificarp)
+        btnModificar.setOnClickListener {
+            val intent = Intent(this, PersonalModificarActivity::class.java)
+            startActivity(intent)
+        }
+
+        //Buscar personal
+        val btnBuscar = findViewById<Button>(R.id.boton_buscarp)
+        btnBuscar.setOnClickListener {
+            val intent = Intent(this, PersonalBuscarActivity::class.java)
+            startActivity(intent)
         }
     }
 }
