@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.ArrayAdapter
 import android.widget.Button
+import android.widget.ImageButton
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -34,7 +35,7 @@ class AgregarActividadActivity : AppCompatActivity() {
         val spnProfesor = findViewById<Spinner>(R.id.spnProfesorActividad)
         spnProfesor.adapter = adapterProfesores
 
-        val salones = mutableListOf("Salón central", "Cancha", "Pista de entrenamiento")
+        val salones = mutableListOf("Seleccionar Salon", "Salón central", "Cancha", "Pista de entrenamiento")
 
         val adapterSalones = ArrayAdapter(
             this,
@@ -50,6 +51,12 @@ class AgregarActividadActivity : AppCompatActivity() {
         val btnGuardarActividad = findViewById<Button>(R.id.btnGuardarActividad)
         btnGuardarActividad.setOnClickListener {
             val intent = Intent(this, AgregarActividadActivity::class.java)
+            startActivity(intent)
+        }
+
+        val btnVolver = findViewById<ImageButton>(R.id.btnVolver)
+        btnVolver.setOnClickListener {
+            val intent = Intent(this, ActividadesMenuActivity::class.java)
             startActivity(intent)
         }
     }

@@ -3,6 +3,7 @@ package com.example.clubdeportivomb
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageButton
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -28,6 +29,12 @@ class InformacionActividadActivity : AppCompatActivity() {
         val btnEditarActividad = findViewById<Button>(R.id.btnEditarActividad)
         btnEditarActividad.setOnClickListener {
             val intent = Intent(this, InformacionActividadActivity::class.java)
+            startActivity(intent)
+        }
+
+        val btnVolver = findViewById<ImageButton>(R.id.btnVolver)
+        btnVolver.setOnClickListener {
+            val intent = Intent(this, BuscarActividadActivity::class.java)
             startActivity(intent)
         }
     }

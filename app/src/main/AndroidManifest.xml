@@ -24,6 +24,12 @@
             android:name=".BuscarActividadActivity"
             android:exported="false" />
         <activity
+            android:name=".AsignarActividadAProfesorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".InformacionActividadActivity"
+            android:exported="false" />
+        <activity
             android:name=".AgregarActividadActivity"
             android:exported="false" />
         <activity
