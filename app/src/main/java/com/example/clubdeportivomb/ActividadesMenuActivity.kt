@@ -9,30 +9,30 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class TurnosMenuActivity : AppCompatActivity() {
+class ActividadesMenuActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_turnos_menu)
+        setContentView(R.layout.activity_actividades_menu)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
 
-        val btnTurnosAgregaractivity = findViewById<Button>(R.id.btnAgendarNuevoTurnoMenu)
-        btnTurnosAgregaractivity.setOnClickListener {
+        val btnAgregarActividad = findViewById<Button>(R.id.btnAgregarActividadMenu)
+        btnAgregarActividad.setOnClickListener {
             val intent = Intent(this, AgregarActividadActivity::class.java)
             startActivity(intent)
         }
-        val btnTurnosmodificaractivity = findViewById<Button>(R.id.btnModificarTurnoMenu)
-        btnTurnosmodificaractivity.setOnClickListener {
-            val intent = Intent(this, TurnosMenuActivity::class.java)
+        val btnBuscarActividad = findViewById<Button>(R.id.btnBuscarActividadMenu)
+        btnBuscarActividad.setOnClickListener {
+            val intent = Intent(this, BuscarActividadActivity::class.java)
             startActivity(intent)
         }
-        val btnTurnosBuscarActivity = findViewById<Button>(R.id.btnBuscarTurnosMenu)
-        btnTurnosBuscarActivity.setOnClickListener {
-            val intent = Intent(this, TurnosBuscarActivity::class.java)
+        val btnAsignarActividad = findViewById<Button>(R.id.btnAsignarActividadMenu)
+        btnAsignarActividad.setOnClickListener {
+            val intent = Intent(this, AsignarActividadActivity::class.java)
             startActivity(intent)
         }
         val btnVolver = findViewById<ImageButton>(R.id.btnVolver)
