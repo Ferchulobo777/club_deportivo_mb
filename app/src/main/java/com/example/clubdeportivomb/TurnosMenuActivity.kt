@@ -35,10 +35,6 @@ class TurnosMenuActivity : AppCompatActivity() {
             val intent = Intent(this, TurnosBuscarActivity::class.java)
             startActivity(intent)
         }
-        val btnVolver = findViewById<ImageButton>(R.id.btnVolver)
-        btnVolver.setOnClickListener {
-            val intent = Intent(this, homeActivity::class.java)
-            startActivity(intent)
-        }
+
     }
 }
