@@ -77,19 +77,18 @@
 
         <!-- Botón Volver anclado a la parte inferior -->
         <Button
-            android:id="@+id/btnVolver"
+            android:id="@+id/btnVolverMenuCliente"
             android:layout_width="211dp"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="16dp"
-            android:background="null"
+            android:background="@drawable/botonmenu"
             android:gravity="center"
             android:padding="12dp"
             android:text="Volver"
             android:textColor="#FFFFFF"
-            android:textSize="16sp"
-            app:backgroundTint="@null" />
+            android:textSize="16sp" />
 
     </RelativeLayout>
 
