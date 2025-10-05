@@ -73,7 +73,8 @@
         android:elevation="4dp"
         android:clipToOutline="true"
         android:layout_gravity="center"
-        android:layout_marginBottom="24dp">
+        android:layout_marginBottom="24dp"
+        android:gravity="center_vertical">
 
         <Button
             android:id="@+id/btnNuevoCliente"
@@ -87,7 +88,10 @@
             android:padding="12dp"
             android:text="Nuevo Cliente"
             android:textColor="#FFFFFF"
-            android:textSize="16sp"/>
+            android:textSize="16sp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"/>
 
         <Button
             android:id="@+id/btnBuscarCliente"
@@ -101,7 +105,10 @@
             android:padding="12dp"
             android:text="Buscar Cliente"
             android:textColor="#FFFFFF"
-            android:textSize="16sp"/>
+            android:textSize="16sp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"/>
 
         <Button
             android:id="@+id/btnControlAcceso"
@@ -116,7 +123,10 @@
             android:padding="12dp"
             android:text="Control de Acceso"
             android:textColor="#FFFFFF"
-            android:textSize="16sp"/>
+            android:textSize="16sp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"/>
 
     </LinearLayout>
 

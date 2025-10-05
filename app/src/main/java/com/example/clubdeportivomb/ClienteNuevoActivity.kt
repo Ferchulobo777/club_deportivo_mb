@@ -24,5 +24,11 @@ class ClienteNuevoActivity : AppCompatActivity() {
             val intent = Intent(this, ClienteNuevoNoSocioActivity::class.java)
             startActivity(intent)
         }
+
+        val btnVolver = findViewById<ImageButton>(R.id.btnVolver)
+        btnVolver.setOnClickListener {
+            val intent = Intent(this, ClienteMenuActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

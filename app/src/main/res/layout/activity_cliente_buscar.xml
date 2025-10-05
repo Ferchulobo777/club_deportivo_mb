@@ -40,7 +40,7 @@
             android:textSize="18sp" />
 
         <ImageButton
-            android:id="@+id/btnVolverCB"
+            android:id="@+id/btnVolver"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@android:color/transparent"
@@ -102,24 +102,12 @@
                 android:text="Buscar"
                 android:textColor="#FFFFFF"
                 android:textSize="16sp"
-                app:backgroundTint="@android:color/transparent" />
+                app:backgroundTint="@null"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"/>
 
         </LinearLayout>
-
-        <!-- Botón Volver anclado a la parte inferior -->
-        <Button
-            android:id="@+id/btnVolver"
-            android:layout_width="211dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="16dp"
-            android:gravity="center"
-            android:padding="12dp"
-            android:text="Volver"
-            android:textColor="#FFFFFF"
-            android:textSize="16sp"
-            app:backgroundTint="@android:color/transparent" />
 
     </RelativeLayout>
 

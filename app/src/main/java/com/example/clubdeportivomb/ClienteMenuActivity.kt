@@ -3,6 +3,7 @@ package com.example.clubdeportivomb
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
 
 class ClienteMenuActivity : AppCompatActivity() {
@@ -25,11 +26,10 @@ class ClienteMenuActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-
-
-//        val btnVolver = findViewById<Button>(R.id.btnVolver)
-//        btnVolver.setOnClickListener {
-//           finish() // Cierra esta pantalla y vuelve a la anterior
-//        }
+        val btnVolver = findViewById<ImageButton>(R.id.btnVolver)
+        btnVolver.setOnClickListener {
+            val intent = Intent(this, HomeActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

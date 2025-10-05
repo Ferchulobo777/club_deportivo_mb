@@ -3,6 +3,7 @@ package com.example.clubdeportivomb
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageButton
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 
@@ -17,6 +18,12 @@ class ClienteBuscarActivity : AppCompatActivity() {
         val btnBuscarClienteVer = findViewById<Button>(R.id.btnBuscarCliente)
         btnBuscarClienteVer.setOnClickListener {
             val intent = Intent(this, ClienteVerActivity::class.java)
+            startActivity(intent)
+        }
+
+        val btnVolver = findViewById<ImageButton>(R.id.btnVolver)
+        btnVolver.setOnClickListener {
+            val intent = Intent(this, ClienteMenuActivity::class.java)
             startActivity(intent)
         }
     }

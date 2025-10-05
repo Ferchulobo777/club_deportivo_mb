@@ -225,7 +225,10 @@
                 android:background="@drawable/botonmenudarker"
                 android:text="Apto Fisico"
                 android:textColor="#FFFFFF"
-                app:backgroundTint="@null" />
+                app:backgroundTint="@null"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"/>
 
             <!-- Botón Editar -->
             <Button
@@ -237,7 +240,10 @@
                 android:background="@drawable/botonmenu"
                 android:text="Editar"
                 android:textColor="#FFFFFF"
-                app:backgroundTint="@null" />
+                app:backgroundTint="@null"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"/>
 
         </LinearLayout>
 
