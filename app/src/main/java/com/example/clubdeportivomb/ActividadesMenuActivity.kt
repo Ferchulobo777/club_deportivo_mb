@@ -37,7 +37,7 @@ class ActividadesMenuActivity : AppCompatActivity() {
         }
         val btnVolver = findViewById<ImageButton>(R.id.btnVolver)
         btnVolver.setOnClickListener {
-            val intent = Intent(this, homeActivity::class.java)
+            val intent = Intent(this, HomeActivity::class.java)
             startActivity(intent)
         }
     }

@@ -22,12 +22,12 @@ class TurnosMenuActivity : AppCompatActivity() {
 
         val btnTurnosAgregaractivity = findViewById<Button>(R.id.btnAgendarNuevoTurnoMenu)
         btnTurnosAgregaractivity.setOnClickListener {
-            val intent = Intent(this, AgregarActividadActivity::class.java)
+            val intent = Intent(this, TurnosAgregaractivity::class.java)
             startActivity(intent)
         }
-        val btnTurnosmodificaractivity = findViewById<Button>(R.id.btnModificarTurnoMenu)
-        btnTurnosmodificaractivity.setOnClickListener {
-            val intent = Intent(this, TurnosMenuActivity::class.java)
+        val btnTurnosModificarActivity = findViewById<Button>(R.id.btnModificarTurnoMenu)
+        btnTurnosModificarActivity.setOnClickListener {
+            val intent = Intent(this, TurnosModificarActivity::class.java)
             startActivity(intent)
         }
         val btnTurnosBuscarActivity = findViewById<Button>(R.id.btnBuscarTurnosMenu)
@@ -35,6 +35,26 @@ class TurnosMenuActivity : AppCompatActivity() {
             val intent = Intent(this, TurnosBuscarActivity::class.java)
             startActivity(intent)
         }
+
+        val btnTurnosCargarConsultaActivity = findViewById<Button>(R.id.btnCargarConsultaMenu)
+        btnTurnosCargarConsultaActivity.setOnClickListener {
+            val intent = Intent(this, TurnosCargarConsultaActivity::class.java)
+            startActivity(intent)
+        }
+
+        val btnTurnosConsultarHistoriaClinicaActivity = findViewById<Button>(R.id.btnHistorialDeConsultasMenu)
+        btnTurnosConsultarHistoriaClinicaActivity.setOnClickListener {
+            val intent = Intent(this, TurnosConsultarHistoriaClinicaActivity::class.java)
+            startActivity(intent)
+        }
+
+
+        val btnVolver = findViewById<ImageButton>(R.id.btnVolver)
+        btnVolver.setOnClickListener {
+            val intent = Intent(this, HomeActivity::class.java)
+            startActivity(intent)
+        }
+
 
     }
 }

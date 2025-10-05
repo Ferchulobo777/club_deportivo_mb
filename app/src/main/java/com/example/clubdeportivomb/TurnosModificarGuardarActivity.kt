@@ -22,6 +22,18 @@ class TurnosModificarGuardarActivity : AppCompatActivity() {
             insets
         }
 
+        val profesionales = mutableListOf("Seleccionar Profesional", "Lic. Messi", "Lic. Eee", "Profesional C")
+        val adapterProfesionales = ArrayAdapter(
+            this,
+            android.R.layout.simple_spinner_item,
+            profesionales
+        )
+        adapterProfesionales.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+
+        val spnSeleccionarProfesional = findViewById<Spinner>(R.id.spnSeleccionarProfesional)
+        spnSeleccionarProfesional.adapter = adapterProfesionales
+
+
         val btnVolver = findViewById<ImageButton>(R.id.btnVolver)
         btnVolver.setOnClickListener {
             val intent = Intent(this, TurnosMenuActivity::class.java)
