@@ -8,44 +8,15 @@
     android:padding="16dp"
     android:background="#1D1B41">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="69dp"
-        android:gravity="center_vertical"
-        android:orientation="horizontal"
-        android:padding="16dp">
-
-        <!-- Ícono de usuario -->
-        <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginEnd="15dp"
-            android:contentDescription="Usuario"
-            android:gravity="center_vertical"
-            android:src="@drawable/soccer_ball" />
-
-        <!-- usuario -->
-        <TextView
-            android:id="@+id/tvUsuario"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="2dp"
-            android:layout_marginEnd="200dp"
-            android:text="@string/usuario"
-            android:textColor="#FFFFFF"
-            android:textSize="18sp" />
-
-        <!-- Flecha -->
-        <ImageButton
-            android:id="@+id/btnVolver"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@android:color/transparent"
-            android:contentDescription="Volver"
-            android:src="@drawable/flecha_volver" />
-
-    </LinearLayout>
-
+    <TextView
+        android:id="@+id/tvUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/usuario"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"/>
 
     <TextView
         android:id="@+id/tvPregunta"
@@ -55,7 +26,7 @@
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         android:layout_gravity="center"
-        android:layout_marginTop="18dp"
+        android:layout_marginTop="24dp"
         android:layout_marginBottom="16dp"/>
 
 

@@ -254,7 +254,10 @@
                     android:textColor="#FFFFFF"
                     android:textSize="16sp"
                     app:backgroundTint="@null"
-                    android:layout_marginEnd="8dp"/>
+                    android:layout_marginEnd="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"/>
 
                 <Button
                     android:id="@+id/btnEditarActividad"
@@ -268,7 +271,10 @@
                     android:textColor="#0F0E20"
                     android:textSize="16sp"
                     app:backgroundTint="#5EC8D4"
-                    android:layout_marginStart="8dp"/>
+                    android:layout_marginStart="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?android:attr/selectableItemBackground"/>
 
             </LinearLayout>
         </LinearLayout>

@@ -31,6 +31,10 @@ class HomeActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-
+        val btnActividadesMenuActivity = findViewById<androidx.cardview.widget.CardView>(R.id.btnActividades)
+        btnActividadesMenuActivity.setOnClickListener {
+            val intent = Intent(this, ActividadesMenuActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
