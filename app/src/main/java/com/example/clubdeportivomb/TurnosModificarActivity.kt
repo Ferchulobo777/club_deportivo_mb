@@ -20,12 +20,6 @@ class TurnosModificarActivity : AppCompatActivity() {
             insets
         }
 
-        val btnBuscarDNI = findViewById<Button>(R.id.btnBuscarDNI)
-        btnBuscarDNI.setOnClickListener {
-            val intent = Intent(this, InformacionActividadActivity::class.java)
-            startActivity(intent)
-        }
-
         val btnVolver = findViewById<ImageButton>(R.id.btnVolver)
         btnVolver.setOnClickListener {
             val intent = Intent(this, TurnosMenuActivity::class.java)

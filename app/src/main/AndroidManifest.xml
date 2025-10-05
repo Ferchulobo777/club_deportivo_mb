@@ -12,38 +12,41 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ClubDeportivoMB">
 
-        <activity android:name=".PersonalNuevoActivity"
-            />
-        <activity android:name=".PersonalModificarActivity"
-            />
-        <activity android:name=".PersonalBuscarActivity"
-            />
-        <activity
-            android:name=".homeActivity"
-            android:exported="false" />
-        <activity
-            android:name=".LoginActivity"
-            android:exported="true" />
-        <activity
-            android:name=".pantalla_base"
-            android:exported="false" />
-        <activity
-            android:name=".personal_menu"
-            android:exported="false" />
-        <activity
-            android:name=".Registrousuario"
-            android:exported="false" />
+        <!-- Pantalla inicial (Splash) -->
         <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- Pantalla de Login -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+
+        <!-- Otras pantallas -->
+        <activity android:name=".TurnosConsultarHistoriaClinicaActivity" android:exported="false" />
+        <activity android:name=".TurnosCargarConsultaActivity" android:exported="false" />
+        <activity android:name=".TurnosBuscarActivity" android:exported="false" />
+        <activity android:name=".TurnosModificarGuardarActivity" android:exported="false" />
+        <activity android:name=".TurnosModificarActivity" android:exported="false" />
+        <activity android:name=".TurnosAgregaractivity" android:exported="false" />
+        <activity android:name=".NuevoClienteActivity" android:exported="false" />
+        <activity android:name=".HomeActivity" android:exported="false" />
+        <activity android:name=".AsignarActividadActivity" android:exported="false" />
+        <activity android:name=".BuscarActividadActivity" android:exported="false" />
+        <activity android:name=".AsignarActividadAProfesorActivity" android:exported="false" />
+        <activity android:name=".InformacionActividadActivity" android:exported="false" />
+        <activity android:name=".AgregarActividadActivity" android:exported="false" />
+        <activity android:name=".ActividadesMenuActivity" android:exported="false" />
+        <activity android:name=".pantalla_base" android:exported="false" />
+        <activity android:name=".personal_menu" android:exported="false" />
+        <activity android:name=".Registrousuario" android:exported="false" />
+
+
     </application>
-
-
 
 </manifest>
