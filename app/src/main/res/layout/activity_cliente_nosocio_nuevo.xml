@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,15 +9,46 @@
     android:padding="16dp"
     android:background="#1D1B41">
 
-    <TextView
-        android:id="@+id/tvUsuario"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/usuario"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
         android:layout_gravity="center"
-        android:layout_marginTop="16dp"/>
+        android:clipToOutline="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/fondo_redondo_avatar"
+            android:clipToOutline="true"
+            tools:srcCompat="@tools:sample/avatars"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:id="@+id/tvUsuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/usuario"
+            android:textColor="#FFFFFF"
+            android:layout_weight="1"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/btnVolver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:contentDescription="Volver"
+            android:src="@drawable/flecha_volver" />
+
+
+    </LinearLayout>
 
     <TextView
         android:id="@+id/tvPregunta"
