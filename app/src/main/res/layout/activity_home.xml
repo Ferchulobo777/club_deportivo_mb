@@ -93,6 +93,7 @@
                 app:cardCornerRadius="12dp"
                 app:cardElevation="8dp">
 
+                <!-- clientes -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -127,8 +128,12 @@
                 android:layout_column="0"
                 android:layout_margin="12dp"
                 app:cardCornerRadius="12dp"
-                app:cardElevation="8dp">
+                app:cardElevation="8dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground">
 
+                <!-- actividades -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -168,6 +173,7 @@
                 app:cardCornerRadius="12dp"
                 app:cardElevation="8dp">
 
+                <!-- personal -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -207,6 +213,7 @@
                 app:cardCornerRadius="12dp"
                 app:cardElevation="8dp">
 
+                <!-- turnos -->
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"

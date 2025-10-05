@@ -2,7 +2,6 @@ package com.example.clubdeportivomb
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -31,6 +30,17 @@ class HomeActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val btnActividadesMenuActivity = findViewById<androidx.cardview.widget.CardView>(R.id.btnActividades)
+        btnActividadesMenuActivity.setOnClickListener {
+            val intent = Intent(this, ActividadesMenuActivity::class.java)
+            startActivity(intent)
+        }
+
+        val btnPersonalMenuActivity = findViewById<androidx.cardview.widget.CardView>(R.id.btnPersonal)
+        btnPersonalMenuActivity.setOnClickListener {
+            val intent = Intent(this, PersonalMenuActivity::class.java)
+            startActivity(intent)
+        }
 
     }
 }

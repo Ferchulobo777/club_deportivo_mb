@@ -1,34 +1,32 @@
 package com.example.clubdeportivomb
 
-import android.content.Intent
 import android.os.Bundle
+import androidx.activity.enableEdgeToEdge
+import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
 import android.os.Handler
 import android.os.Looper
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 
-class MainActivity : AppCompatActivity() {// Define el tiempo que durará la pantalla de bienvenida en milisegundos
-private val splashTimeOut: Long = 1000 // 3 segundos
-
+class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        // Vincula esta clase con el layout de la pantalla de bienvenida
+        enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
-        // Crea un manejador para ejecutar una acción después de un retraso
+        // Ajuste de los márgenes del sistema (barras de estado, navegación, etc.)
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
+            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
+            insets
+        }
+
+        // Espera 3 segundos y pasa al Login
         Handler(Looper.getMainLooper()).postDelayed({
-            // Este código se ejecutará pasados los 3 segundos
-
-            // 1. Prepara la navegación hacia la LoginActivity
             val intent = Intent(this, LoginActivity::class.java)
-
-            // 2. Ejecuta la navegación
             startActivity(intent)
-
-            // 3. Cierra MainActivity para que el usuario no pueda volver a ella
-            //    con el botón "Atrás". ¡Esto es muy importante!
-            finish()
-
-        }, splashTimeOut)
+            finish() // Para que no vuelva atrás al splash
+        }, 3000) // 3000 milisegundos = 3 segundos
     }
 }

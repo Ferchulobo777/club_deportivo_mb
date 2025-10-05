@@ -87,7 +87,10 @@ android:background="#1D1B41">
             android:padding="12dp"
             android:textColor="#FFFFFF"
             android:textSize="16sp"
-            android:text="Agregar Actividad" />
+            android:text="Agregar Actividad"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"/>
 
         <Button
             android:id="@+id/btnBuscarActividadMenu"
@@ -102,7 +105,10 @@ android:background="#1D1B41">
             android:padding="12dp"
             android:textColor="#FFFFFF"
             android:textSize="16sp"
-            android:text="Buscar Actividad" />
+            android:text="Buscar Actividad"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"/>
 
         <Button
             android:id="@+id/btnAsignarActividadMenu"
@@ -117,7 +123,10 @@ android:background="#1D1B41">
             android:padding="12dp"
             android:textColor="#FFFFFF"
             android:textSize="16sp"
-            android:text="Asignar Actividad" />
+            android:text="Asignar Actividad"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"/>
 
     </LinearLayout>
 

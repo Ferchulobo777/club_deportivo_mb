@@ -74,16 +74,25 @@
             android:exported="false" />
         <activity
             android:name=".ActividadesMenuActivity"
-            android:exported="false"></activity>
+            android:exported="false"/>
         <activity
             android:name=".pantalla_base"
             android:exported="false" />
         <activity
-            android:name=".personal_menu"
+            android:name=".PersonalMenuActivity"
             android:exported="false" />
         <activity
-            android:name=".Registrousuario"
+            android:name=".PersonalBuscarActivity"
             android:exported="false" />
+        <activity
+            android:name=".PersonalModificarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PersonalNuevoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegistroUsuarioActivity"
+            android:exported="true" />
         <activity
             android:name=".LoginActivity"
             android:exported="false" />

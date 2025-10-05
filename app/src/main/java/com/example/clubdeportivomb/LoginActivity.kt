@@ -1,11 +1,15 @@
 package com.example.clubdeportivomb
 
+
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+
 
 class LoginActivity : AppCompatActivity() {
 
@@ -19,6 +23,7 @@ class LoginActivity : AppCompatActivity() {
         val inputUsuario = findViewById<EditText>(R.id.title_inputUsuario)
         val inputPassword = findViewById<EditText>(R.id.title_inputPassword)
         val btnIngresar = findViewById<Button>(R.id.title_btnIngresar)
+        
 
         // 3. Define la acción que ocurrirá al pulsar el botón "Ingresar"
         btnIngresar.setOnClickListener {
@@ -38,6 +43,15 @@ class LoginActivity : AppCompatActivity() {
                 // Si el login es incorrecto, mostramos un mensaje de error
                 Toast.makeText(this, "Usuario o contraseña incorrectos", Toast.LENGTH_SHORT).show()
             }
+
+
+            }
+
+        val txtRegistro = findViewById<TextView>(R.id.title_registro)
+
+        txtRegistro.setOnClickListener {
+            val intent = Intent(this, RegistroUsuarioActivity::class.java)
+            startActivity(intent)
         }
     }
 }

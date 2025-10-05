@@ -1,5 +1,8 @@
 package com.example.clubdeportivomb
 
+
+
+
 import android.os.Bundle
 import android.widget.Spinner
 import androidx.activity.enableEdgeToEdge
@@ -10,10 +13,14 @@ import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Toast
-import com.example.clubdeportivomb.R
+import android.widget.ImageButton
+import android.content.Intent
+import android.widget.TextView
 
 
-class Registrousuario : AppCompatActivity() {
+
+
+class RegistroUsuarioActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -23,7 +30,35 @@ class Registrousuario : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        val spinnerArea: Spinner = findViewById(R.id.spinnerArea)
+
+
+
+
+        val btnVolver = findViewById<ImageButton>(R.id.btnVolver)
+        btnVolver.setOnClickListener {
+            onBackPressedDispatcher.onBackPressed()
+        }
+
+
+
+
+        val tvIniciaSesion = findViewById<TextView>(R.id.tvIniciaSesion)
+
+
+
+
+        tvIniciaSesion.setOnClickListener {
+            val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
+        }
+
+
+
+
+        val spinnerArea: Spinner = findViewById(R.id.spinner_area)
+
+
+
 
         val adapter = ArrayAdapter.createFromResource(
             this,
@@ -32,16 +67,34 @@ class Registrousuario : AppCompatActivity() {
         )
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
 
+
+
+
         spinnerArea.adapter = adapter
+
+
+
 
         spinnerArea.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(parent: AdapterView<*>, view: View?, position: Int, id: Long) {
                 val areaSeleccionada = parent.getItemAtPosition(position).toString()
-                Toast.makeText(this@Registrousuario, "Área: $areaSeleccionada", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this@RegistroUsuarioActivity, "Área: $areaSeleccionada", Toast.LENGTH_SHORT).show()
+
+
+
+
             }
 
-            override fun onNothingSelected(parent: AdapterView<*>) {}
+
+            override fun onNothingSelected(parent: AdapterView<*>?) {
+                // No hacemos nada
+            }
         }
 
+
+
+
     }
+
+
 }
